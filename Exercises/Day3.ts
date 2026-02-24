@@ -73,3 +73,5 @@ const validate = (value: string) => {
 /* Basicamente o objetivo desse exercício foi criar pequenas funções que fazem algumas validações específicas muito utilizadas em sistemas reais, como verificar
 se uma propriedade está vazia, tamanho mínimo da mesma, e se possui valores númericos, e depois fizemos uma composição aonde agregamos todas essas pequenas funções
 em ordem para retornar uma lista de possíveis erros encontrados */
+
+
