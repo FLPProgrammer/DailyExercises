@@ -144,3 +144,31 @@ empregados diferentes com profissões diferentes*/
 
 /*O príncipio da responsabilidade única também foi aplicado, ou seja cada classe, função tem apenas um uso específico e claro,
 evitando classes e funções extremamentes grandes com diversas funcionalidades diferentes*/
+
+
+function searchInsert(nums: number[], target: number) {
+    let left = 0;
+    let right = nums.length - 1;
+
+    while(left <= right) {
+        let mid = Math.floor((left + right) / 2);
+
+        if(nums[mid] === target) {
+            return mid;
+        }
+
+        if(nums[mid]! < target) {
+            left = mid + 1;
+        }
+        else {
+            right = mid -1;
+        }
+    }
+    return left;
+}   
+
+
+/*Aqui temos um algoritmo de binary search pode ser utilizado de maneira muito eficiente quando temos um array ordenado, por que assim conseguimos usar a estratégia de 
+dividir para conquistar, ou seja definimos a ponta esquerda que é a inicial e a ponta direita que é a final, defimos a condição enquanto a esquerda foi menor ou igual a direita
+achamos o meio, e vamos sempre procurando o elemento target usando o elemento ao meio como elemento comparativo, se for igual a meio retornados o meio,se for menor que o meio acrescentamos
+uma posição, se for maior do que o meio decrementamos uma posição, e ao final retornados o left a grande sacada aqui é que o left sempre irá permanecer na posição aonde começou.*/
