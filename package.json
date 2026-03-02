@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node Exercises/Day6.ts"
+    "dev": "nodemon --exec ts-node Exercises/Day7.ts"
   },
   "keywords": [],
   "author": "",
