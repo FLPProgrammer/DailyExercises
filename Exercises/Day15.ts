@@ -1,4 +1,4 @@
-/*class ListNode {
+class ListNode {
     value: number;
     next: ListNode | null;
 
@@ -38,7 +38,7 @@ node1.next = node2;
 node2.next = node3;
 
 const newHead = reverseLinkedList(node1);
-printLinkedList(newHead)*/
+printLinkedList(newHead)
 
 
 /* Nesse exercício, criamos a classe ListNode, que representa um nó da lista com um valor e um ponteiro para o próximo.
