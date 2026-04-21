@@ -293,7 +293,7 @@ class LoginSystem {
  
         const user = this.users[userIndex];
  
-        if(user.password !== password) {
+        if(user!.password !== password) {
             console.log('❌ Senha incorreta. Não foi possível deletar a conta.');
             return;
         }
@@ -303,7 +303,7 @@ class LoginSystem {
         }
  
         this.users.splice(userIndex, 1);
-        console.log(`✅ Conta de ${user.name} deletada com sucesso.`);
+        console.log(`✅ Conta de ${user!.name} deletada com sucesso.`);
     }
  
     updateProfile(email: string, password: string, newName: string): void {
